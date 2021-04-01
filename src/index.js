@@ -1,7 +1,7 @@
 const path = require('path')
 const express = require('express')
 const morgan = require('morgan')
-const handlebars = require('express-handlebars')
+const   handlebars = require('express-handlebars')
 
 const app = express()
 const port = 3000
@@ -9,7 +9,8 @@ const port = 3000
 const route = require('./routes')
 
 const server = app.listen(port, () => {
-  console.log(`Listening on port ${port}`);
+  console.log(`
+  Listening on port ${port}`);
   console.log(`http://localhost:${port}`);
 })
 
